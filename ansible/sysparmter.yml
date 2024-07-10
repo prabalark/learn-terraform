@@ -1,5 +1,6 @@
 - name: print host
   hosts: all
+  key_id: 8dae0259-1d22-47ef-a533-2cf7a81cb5c5
   tasks:
     - name: print parameter
       ansible.builtin.debug:
