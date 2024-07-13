@@ -5,3 +5,11 @@
       ansible.builtin.debug:
         msg: parameter - {{ lookup('aws_ssm', 'test1', region='us-east-1') }}
         # key_id: 8dae0259-1d22-47ef-a533-2cf7a81cb5c5  # to encrypt test1 - 'data'
+
+- name: print host
+  hosts: all
+  tasks:
+    - name: print parameter
+      ansible.builtin.debug:
+        msg: parameter - {{ lookup('aws_ssm', 'test2', region='us-east-1') }}
+        # key_id: 8dae0259-1d22-47ef-a533-2cf7a81cb5c5  # to encrypt test1 - 'data'
