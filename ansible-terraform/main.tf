@@ -1,4 +1,5 @@
 resource "aws_ssm_parameter" "para2" {
+  count = length(var.practice1)
   name  = var.practice1[count.index].name   # keep folder name   # system manger in aws
   value = var.practice1[count.index].value    # any text
   #type = "String"
