@@ -1,5 +1,5 @@
 resource "aws_ssm_parameter" "para1" {
-  name  = "test4"    # keep folder name   # system manger in aws
+  name  = "test5"    # keep folder name   # system manger in aws
   #type  = "String"
   type  = "SecureString"   # [txt="String" ,"StringList" ,encrpt="SecureString"]
   value = "hello"    # any text
